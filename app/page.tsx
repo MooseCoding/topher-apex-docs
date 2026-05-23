@@ -23,7 +23,7 @@ export default function Home() {
         </h1>
 
         <p
-          className="text-2xl sm:text-3xl mb-10 leading-relaxed font-semibold tracking-wide"
+          className="text-lg sm:text-xl mb-10 leading-relaxed font-medium tracking-wide"
           style={{
             background: "linear-gradient(90deg, #cc0000, #ff6666, #8B0000, #ff3333, #cc0000)",
             backgroundSize: "200% auto",
