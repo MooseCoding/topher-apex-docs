@@ -40,30 +40,19 @@ tiny oscilations and allow the robot to coompletely stop.
   for the purposes of testing.
 </Callout>
 
-## Tuning Process -- Mecanum and Tank Drive
+## For Swerve
+* Start by debugging your [swerve module angle offsets](/docs/tuning/swerve-offsets) before running any other tuner.
+* Once this is completed, the tuning process is the same as any other drivetrain. Refer to the steps below to run the necessary tuners.
 
+## Tuning Process
 <Steps>
 ### Heading Tuner
-Start by running the [heading tuner](/docs/tuning/heading-tuner) to tune your heading controller. This is to ensure
-that the robot can maintain its heading while running subsequent tuners.
+Start by running the [heading tuner](/docs/tuning/heading-tuner) to tune your heading controller. This needs to be tuned first specifically for heading correction on subsequent tuners.
 
-### Axial/Lateral Tuners
-Once your heading controller is tuned, you can run the [axial tuner](/docs/tuning/axial-tuner) or the [lateral tuner](/docs/tuning/lateral-tuner)
-in any order.
+### Strafe Tuner
+Once your heading controller is tuned, you can run the [strafe tuner](/docs/tuning/lateral-tuner)
+
+### Axial Tuner
+The final tuner is the [axial tuner](/docs/tuning/axial-tuner). After this, the tuning process is complete!
 </Steps>
 
-## Tuning Process -- Swerve Drive
-
-<Steps>
-### Swerve Module Angle Offsets
-Start by debugging your [swerve module angle offsets](/docs/tuning/swerve-offsets) before running any tuner. This step is crucial to running Apex on a
-Swerve Drive robot.
-
-### Heading Tuner
-Start by running the [heading tuner](/docs/tuning/heading-tuner) to tune your heading controller. This is to ensure
-that the robot can maintain its heading while running subsequent tuners.
-
-### Axial/Lateral Tuners
-Once your heading controller is tuned, you can run the [axial tuner](/docs/tuning/axial-tuner) or the [lateral tuner](/docs/tuning/lateral-tuner)
-in any order.
-</Steps>
